@@ -1,0 +1,212 @@
+
+body, html{
+    margin:0;
+    padding:0;
+}
+
+
+
+
+
+
+
+
+
+
+.bkimg ,.bkimg2
+{
+    left:0;
+    right:0;
+    bottom:0;
+
+}
+.bkimg video
+{
+
+    position:fixed;
+    min-width:100vw;
+    width:100vw;
+    margin: 0 0 0 0;
+    padding: 0  0 0 0 ;
+    height:113vh;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index: -110;
+
+
+
+}
+
+.bkimg
+{
+
+
+    position: fixed;
+    min-height: 100vh;
+    z-index: -100;
+
+}
+.bkimg2
+
+{
+    background: url("gallery/3D_Printed.jpg");
+    z-index: 10;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+
+}
+.abt
+{
+    background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.75));
+
+    padding : 2vh 2vw 2vh 2vw;
+    margin : 0 0 0 0;
+    display: block;
+    font-size: 1.5vw;
+    z-index: 4;
+    max-width: 25vw;
+    height:max-content;
+    position:absolute;
+    right:5vw;
+    top:10vw;
+    border-radius: 1.5vh;
+    box-shadow: 0 0 1vw 0  black;
+    border: 2px  silver;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+.abt h3
+{
+    text-align: center;
+}
+
+.bt2 div
+{
+
+
+    background-color: rgba(0, 0, 0, 0.83);
+    border: 0;
+    border-radius: 0 0.5vw 0.5vw 0;
+    width:18vw;
+    height: max-content;
+    min-height: 43vh;
+    font-size: 2.8vh;
+    color: white;
+    left:-15vw;
+    transition: 0.4s;
+    position:fixed;
+    padding :7vh 0 0 3vw;
+    
+
+
+}
+.bt2 div:hover
+{
+    left:0;
+
+}
+
+ .link1  {
+    color:white;
+     font-size: 2vw;
+    text-decoration: none;
+
+
+ }
+
+.bt2
+{
+    z-index: 3;
+    margin-top: 30vh;
+    height:max-content;
+
+
+}
+
+.bt23
+{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    position:fixed;
+
+    left: 0;
+    z-index: 5;
+    top:37vh;
+    color: white;
+    font-size: 2vw;
+    padding: 0 0 0 0 ;
+    margin : 0 0 0 0 ;
+
+}
+
+.create
+{
+    width:100%;
+    min-height:25vh ;
+    background-color: rgba(0, 0, 0,0.8);
+    color:white;
+    font-size:4vw;
+    z-index: 10;
+    text-align: center;
+    display: block;
+    vertical-align: center;
+    margin:0 0 0 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.45));
+    padding-top: 7vh;
+
+
+
+
+}
+.direct
+{
+    background:  url("gallery/wood.jpg");
+    z-index:4;
+    display : grid;
+    grid-template-columns: auto auto ;
+    grid-column-gap: 5vw;
+    padding:5vh 5vw 0 5vw;
+    font-size: 1.5vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+width:100%;
+}
+.direct img
+
+{
+    width:30vw;
+    height:auto;
+    margin : 0 5vw 5vh 5vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 1vw 0  black;
+
+
+}
+
+
+.Home_Footer
+{
+    background-color:black;
+    min-height:30vh;
+    color:whitesmoke;
+    margin:0 0 0 0 ;
+}
+
+.Home_Footer h1
+{
+    margin: 0 0 0 0 ;
+    padding: 11vh 0 0 0 ;
+    font-size: 4vw;
+
+}

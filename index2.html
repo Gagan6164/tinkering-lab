@@ -1,0 +1,84 @@
+
+<?php
+require "header.php";
+?>
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rethink! The Tinkering Lab </title>
+
+
+</head>
+
+
+<body>
+
+<link rel="stylesheet" href="main.css">
+    <!-Script to add facebook Feed->
+
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId            : 'your-app-id',
+                autoLogAppEvents : true,
+                xfbml            : true,
+                version          : 'v3.0'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+<div class="bkimg">
+
+ <video height="113%" width= " 100%" id = "vid" autoplay muted loop>
+     <source  src = "Rethink_Timelapse.mp4" type="video/mp4">
+
+
+ </video>
+    <script>
+        document.getElementById('vid').play();
+    </script>
+</div>
+
+
+
+<div class="bt2" onmouseover="disp()" onmouseout="disp2()">
+
+<div>
+    <a class ="link1 " href="access.php"> Lab Access</a><br>
+    <a class ="link1" href="Entry.php"> Entry Exit </a><br>
+    <a class ="link1" href="feedback.php"> Feedback </a><br>
+</div>
+    <p class="bt23" id="pa"> FORMS</p>
+</div>
+
+
+<div class="abt">
+
+</div>
+
+
+<script>
+    function disp()
+    {
+        document.getElementById("pa").style.display = "none";
+    }
+    function disp2()
+    {
+        document.getElementById("pa").style.display = "block";
+    }
+</script>

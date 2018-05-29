@@ -1,0 +1,201 @@
+<?php
+    require "header.php"
+?>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <title>Lab Access Form</title>
+        <link rel="stylesheet" href="forms.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+    <div class="bt2" onmouseover="disp()" onmouseout="disp2()">
+
+        <div>
+            <a class ="link1 " href="access.php"> Lab Access</a><br><br>
+            <a class ="link1" href="Entry.php"> Entry Exit </a><br><br>
+            <a class ="link1" href="feedback.php"> Feedback </a><br><br>
+        </div>
+        <p class="bt23" id="pa"> FORMS</p>
+    </div>
+
+
+
+
+
+    <script>
+        function disp()
+        {
+            document.getElementById("pa").style.display = "none";
+        }
+        function disp2()
+        {
+
+            document.getElementById("pa").style.display = "block";
+        }
+    </script>
+    <div class="form_css">
+    <Center>
+    <h1>Laboratory Access Proforma</h1>
+
+    <form class="" action="#">
+        <table>
+
+                <tr>
+                    <td> Name</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" onfocus="this.value=''"  value="Enter your Name" name="name">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Email  Address</td>
+                </tr>
+
+                <tr>
+                    <td><input onfocus="this.value=''" type="email" value="Enter your Email" name="email"></td>
+                </tr>
+
+                <tr>
+                    <td>Enrollment Number </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="number" value="Enter your Enrollment no." name="Enrollment">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Department </td>
+                </tr>
+
+                <tr><td>
+                        <select>
+                            <option name="Archi">Architecture and Planning</option>
+                            <option value="app_science">Applied Science and Engineering</option>
+                            <option name="Biotechnology">Biotechnology</option>
+                            <option name="Chemical">Chemical Engineering</option>
+                            <option name = "Chemistry">Chemistry</option>
+                            <option name = "Civil">Civil Engineering</option>
+                            <option name = "cs">Computer Science and Engineering</option>
+                            <option name = "Earthquake">Earthquake Engineering</option>
+                            <option name = "earth">Earth Sciences</option>
+                            <option name = "Electrical">Electrical Engineering</option>
+                            <option name = "ECE">Electronics and Communication Engineering</option>
+                            <option name = "human">Humanities and Social Sciences</option>
+                            <option name = "Hydrology">Hydrology</option>
+                            <option name = "Management">Management Studies</option>
+                            <option name = "Mathematics">Mathematics</option>
+                            <option name = "mech">Mechanical and Industrial Engineering</option>
+                            <option name = "meta">Metallurgical and Materials Engineering</option>
+                            <option name = "paper">Paper Technology</option>
+                            <option name = "poly">Polymer and Process Engineering</option>
+                            <option name = "Physics">Physics</option>
+                            <option name = "water">Water Resources Development and Management</option>
+
+
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Mobile Number</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input onfocus="this.value=''"  type="number" value="Enter your Mobile no." name="Mobile">
+                    </td>
+                </tr>
+             <tr>
+                    <td>
+                        Program
+                    </td>
+             </tr>
+
+            <tr>
+                <td>
+                    <select>
+                        <option name="B.TECH">B.TECH</option>
+                        <option name="M.TECH">M.TECH</option>
+                        <option name="IDD">IDD</option>
+                        <option name="Ph.D">Ph.D</option>
+                        <option name = "MSc">MSc</option>
+                        <option name = "BSc">BSc</option>
+                        <option name = "MBA">MBA</option>
+                    </select>
+                </td>
+            </tr>
+
+
+
+                <tr>
+                    <td> Facility required </td>
+                </tr>
+
+
+
+            <tr>
+                <td><input type="checkbox" name="Printer" > 3D Printer  </td> </tr>
+            <tr>
+                <td><input type="checkbox" name="projet"> 3D System's Projet MJP 3600 </td></tr>
+            <tr>
+                <td><input type="checkbox" name="BOXZY"> Laser Etcher BOXZY </td></tr>
+            <tr>
+                <td><input type="checkbox" name="Carvey"> Carving Machines Carvey </td></tr>
+            <tr>
+                <td><input type="checkbox" name="Powertools"> Power Tools (Saw, Jigsaw, Drill)</td></tr>
+            <tr>
+                <td><input type="checkbox" name="Electronics"> Electronics Facility </td></tr>
+            <tr>
+                <td><input type="checkbox" name="Workstations"> Workstations </td></tr>
+            <tr>
+                <td><input type="checkbox" name="CNC"> CNC Lathe </td></tr>
+            <tr>
+                <td><input type="checkbox" name="Autoclave"> Autoclave </td></tr>
+            <tr>
+                <td><input type="checkbox" name="VMC"> VMC </td></tr>
+
+                <td>Project title</td></tr>
+            <tr>
+                <td><input type="text" value="Enter project title" name="project"></td></tr>
+            <tr>
+
+                <td>Permission Application (if applicable) :</td></tr>
+            <tr>
+                <td><input type="button" value="Add file" name="fle"></td></tr>
+
+
+
+
+            <tr>
+                <td><input type="submit" value="submit"></td></tr>
+
+
+
+
+
+
+
+        </table>
+    </form>
+    </Center></div>
+    </body>
+    </html>
+
+
+
+<?php
+require "footer.php"
+?>

@@ -1,0 +1,124 @@
+<?php
+ require "header.php";
+ ?>
+
+<html>
+<head>
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>Entry - exit Form</title>
+</head>
+<body>
+
+
+
+
+<div class="bt2" onmouseover="disp()" onmouseout="disp2()">
+
+    <div>
+        <a class ="link1 " href="access.php"> Lab Access</a><br><br>
+        <a class ="link1" href="Entry.php"> Entry Exit </a><br><br>
+        <a class ="link1" href="feedback.php"> Feedback </a><br><br>
+    </div>
+    <p class="bt23" id="pa"> FORMS</p>
+</div>
+
+
+
+
+
+<script>
+    function disp()
+    {
+        document.getElementById("pa").style.display = "none";
+    }
+    function disp2()
+    {
+
+        document.getElementById("pa").style.display = "block";
+    }
+</script>
+<div class = "form_css">
+
+<center>
+    <table>
+        <tr>
+            <td>
+                <h1>Make Entry</h1>
+                <p>Ensure to make an entry at the time of entry and exit.</p>
+            </td>
+        </tr>
+        <tr>
+            <tr>
+                <td>
+
+                    Name :
+                </td>
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    <input type="text" onfocus="this.value=''" name="Name" value="Enter your name" >
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Enrollment no. :
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" onfocus="this.value=''" name="Enrollment" value="Enter your enrollment no." >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mobile no. :
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <input type="number" onfocus="this.value=''" name="mobile" value="Enter your mobile no." >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    In or Out :
+                </td>
+            </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="time" value="in"> In
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td>
+                    <input type="radio" name="time" value="out"> Out
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type = "submit">
+                </td>
+            </tr>
+        </form>
+    </table>
+</center>
+</div>
+</body>
+</html>
+
+
+<?php
+require "footer.php";
+?>
